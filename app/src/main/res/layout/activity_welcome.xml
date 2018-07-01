@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD7F6"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="8dp"
+            android:paddingTop="24dp"
+            android:text="@string/prog"
+            android:textColor="#3F8EFC"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/educational"
+            android:textColor="#F9FBF2"
+            android:textSize="26sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/quiz"
+            android:textColor="#3F8EFC"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="#F9FBF2"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:onClick="start"
+            android:text="@string/start"
+            android:textColor="#F9FBF2"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+</LinearLayout>

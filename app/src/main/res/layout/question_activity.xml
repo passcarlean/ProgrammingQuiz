@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD7F6"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/quizName"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:paddingEnd="50dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="50dp"
+                android:paddingStart="8dp"
+                android:text="@string/quizApp"
+                android:textColor="#F9FBF2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#3F8EFC"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/not_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:onClick="unknownUser"
+                android:text="@string/not_user"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#F9FBF2"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/scoreMark"
+            android:textAlignment="center"
+            android:textColor="#211A1D"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="57dp"
+                    android:src="@drawable/user" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="214dp"
+                    android:layout_height="49dp"
+                    android:layout_marginBottom="50dp"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--Question 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_one"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionOne"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/questionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/q_ch"
+                    style="@style/radiobutton"
+                    android:text="@string/a_one_one" />
+
+                <RadioButton
+                    android:id="@+id/q_sc"
+                    style="@style/radiobutton"
+                    android:text="@string/a_one_two" />
+
+                <RadioButton
+                    android:id="@+id/q_one"
+                    style="@style/radiobutton"
+                    android:text="@string/a_one_three" />
+
+                <RadioButton
+                    android:id="@+id/q_da"
+                    style="@style/radiobutton"
+                    android:text="@string/a_one_four" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!--Question 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_two"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionTwo"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/questionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_two_one" />
+
+                <RadioButton
+                    android:id="@+id/q_two"
+                    style="@style/radiobutton"
+                    android:text="@string/a_two_two" />
+
+                <RadioButton
+
+                    style="@style/radiobutton"
+                    android:text="@string/a_two_three" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_two_four" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!--Question 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_three"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionThree"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/questionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/q_three"
+                    style="@style/radiobutton"
+                    android:text="@string/a_three_one" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_three_two" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_three_three" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_three_four" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Question 4 -->
+        <LinearLayout
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_four"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionFour"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:id="@+id/q_four_a"
+                style="@style/checkbox"
+                android:text="@string/a_four_one" />
+
+            <CheckBox
+                android:id="@+id/q_four_b"
+                style="@style/checkbox"
+                android:text="@string/a_four_two" />
+
+            <CheckBox
+                android:id="@+id/q_four_c"
+                style="@style/checkbox"
+                android:text="@string/a_four_three" />
+
+            <CheckBox
+                android:id="@+id/q_four_d"
+                style="@style/checkbox"
+                android:text="@string/a_four_four" />
+        </LinearLayout>
+
+        <!--Question 5 -->
+        <LinearLayout
+            android:id="@+id/checkbox_quest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_five"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionFive"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/q_five_a"
+                style="@style/checkbox"
+                android:text="@string/a_five_one" />
+
+            <CheckBox
+                android:id="@+id/q_five_b"
+                style="@style/checkbox"
+                android:text="@string/a_five_two" />
+
+            <CheckBox
+                android:id="@+id/q_five_c"
+                style="@style/checkbox"
+                android:text="@string/a_five_three" />
+
+            <CheckBox
+                android:id="@+id/q_five_d"
+                style="@style/checkbox"
+                android:text="@string/a_five_four" />
+        </LinearLayout>
+
+        <!--Question 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_six"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionSix"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/questionSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_six_one" />
+
+                <RadioButton
+
+                    style="@style/radiobutton"
+                    android:text="@string/a_six_two" />
+
+                <RadioButton
+                    android:id="@+id/q_six"
+                    style="@style/radiobutton"
+                    android:text="@string/a_six_three" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_six_four" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Question 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_seven"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionSeven"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/questionSeven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/q_seven"
+                    style="@style/radiobutton"
+                    android:text="@string/a_seven_one" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_seven_two" />
+
+                <RadioButton
+
+                    style="@style/radiobutton"
+                    android:text="@string/a_seven_three" />
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:text="@string/a_seven_four" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!--Question 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview"
+                android:text="@string/question_eight"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/textQuestion"
+                android:text="@string/questionEight"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/questionEight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/a_eight"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+
+        <!-- Submit Button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button"
+                android:onClick="submitQuiz"
+                android:text="@string/submit"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/submit"
+                android:layout_toRightOf="@id/submit"
+                android:background="@drawable/rounded_button"
+                android:onClick="resetQuiz"
+                android:text="@string/reset"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

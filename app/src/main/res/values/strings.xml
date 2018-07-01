@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Programming Quiz</string>
+
+        <string name="start_name">Start"</string>
+        <string name="name">UserName</string>
+        <string name="computer_name">Computer Programming Quiz</string>
+        <string name="summary_name">This quiz is worth 20 points - 2 points a question!</string>
+        <string name="question_one"> Question One </string>
+        <string name="question_two">Question Two</string>
+        <string name="question_three">Question Three</string>
+        <string name="question_four">Question Four</string>
+        <string name="question_five">Question Five</string>
+        <string name="question_six">Question Six</string>
+        <string name="question_seven">Question Seven</string>
+        <string name="question_eight">Question Eight</string>
+        <string name="submit">Submit</string>
+
+        <string name="reset">Try Again</string>
+        <string name="prog">PCT</string>
+        <string name="educational">Educational </string>
+
+        <string name="quizApp">PCT Quiz App</string>
+        <string name="quiz">Quiz App</string>
+        <string name="startQuiz"> startQuiz</string>
+        <string name="resetQuiz"> resetQuiz</string>
+        <string name="unknownUser">unknownUser</string>
+        <string name="start">Start</string>
+
+        <string name="scoreMark">NB: 2 marks per question</string>
+        <string name="user">userName</string>
+        <string name="excellent">Excellent</string>
+        <string name="good">Good</string>
+        <string name="poor">Poor</string>
+        <string name="questEight">questEight</string>
+
+
+
+        <string name="welcome"> Welcome to PCT Programming Quiz App</string>
+        <string name="not_user">If this is not you, click here</string>
+
+        <!--Question One-->
+        <string name="questionOne">What  is the name for a character in Scratch?</string>
+        <string name="a_one_one">Character</string>
+        <string name="a_one_two">Scratcher</string>
+        <string name="a_one_three">Sprite</string>
+        <string name="a_one_four">Dancer</string>
+        <!--Question Two-->
+        <string name="questionTwo">Which of the following is not a menu in Scratch?</string>
+        <string name="a_two_one">Variable</string>
+        <string name="a_two_two">Go</string>
+        <string name="a_two_three">Looks</string>
+        <string name="a_two_four">Motion</string>
+        <!--Question Three-->
+        <string name="questionThree">Which of the following is not a type of computer programming language?</string>
+        <string name="a_three_one">Career</string>
+        <string name="a_three_two">Scratch</string>
+        <string name="a_three_three">Java</string>
+        <string name="a_three_four">CoffeeScript</string>
+
+        <!--Question Four-->
+        <string name="questionFour">What  is a Variable?</string>
+        <string name="a_four_one">This is a temporary naming word</string>
+        <string name="a_four_two">A name assigned to a memory space </string>
+        <string name="a_four_three">An identifier used to call a data</string>
+        <string name="a_four_four">A player that jumps</string>
+
+        <!--Question Five-->
+        <string name="questionFive">What  is Computer Code</string>
+        <string name="a_five_one">A group of English words</string>
+        <string name="a_five_two">A set of rules that tells the computer what to do</string>
+        <string name="a_five_three">A set of instructions that are made up of words and numbers in the right order</string>
+        <string name="a_five_four">A step by step way of eliminating problems</string>
+
+        <!--Question Six-->
+        <string name="questionSix">What  is a Sprite called in Scratch?</string>
+        <string name="a_six_one">Musician </string>
+        <string name="a_six_two">Variable</string>
+        <string name="a_six_three">Actor</string>
+        <string name="a_six_four">Dancer</string>
+
+
+        <!--Question Seven-->
+        <string name="questionSeven">Which of these is a conditional statement</string>
+        <string name="a_seven_one">When the green flag is clicked, turn 15 degrees</string>
+        <string name="a_seven_two">Forever move 11 steps</string>
+        <string name="a_seven_three">If i snap my fingers</string>
+        <string name="a_seven_four">Repeat 10 times</string>
+
+        <!--Question Eight-->
+        <string name="questionEight">What is the physical part of a computer system </string>
+        <string name="a_eight">List them:</string>
+        <string name="hardware">Hardware</string>
+        <string name="software">Software</string>
+
+
+
+
+        <!--Submit Button-->
+        <string name="submit_name">Submit</string>
+        <string name="all_question">You have not answered all questions correctly</string>
+        <string name="all_answer">Your answers are correct</string>
+
+    </resources>
+
+
+
